@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.outside-grid {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.intro {
+  width: 30%;
+  height: auto;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "box1 box2 box4"
+    "box1 box3 box4";
+  place-items: center;
+}
+
+.B {
+  margin: 1rem;
+  padding: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 10rem;
+  width: 70%;
+  position: relative;
+  text-align: left;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.box1 {
+  grid-area: box1;
+  border-top: 0.4rem solid hsl(180, 62%, 55%);
+}
+.box2 {
+  grid-area: box2;
+  border-top: 0.4rem solid hsl(0, 78%, 62%);
+}
+.box3 {
+  grid-area: box3;
+  border-top: 0.4rem solid hsl(34, 97%, 64%);
+}
+.box4 {
+  grid-area: box4;
+  border-top: 0.4rem solid hsl(212, 86%, 64%);
+}
+.img-i {
+  float: right;
+  width: 3rem;
+  height: 3rem;
+}
